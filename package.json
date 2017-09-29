@@ -4,7 +4,8 @@
   "description": "",
   "main": "index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "./node_modules/.bin/jspm i -y"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,11 @@
   },
   "homepage": "https://github.com/milenstanev/jspm.util#readme",
   "jspm": {
-    "devDependencies": {}
+    "dependencies": {}
   },
   "dependencies": {
-    "systemjs-builder": "^0.16.11",
-    "browser-sync": "^2.18.13"
+    "browser-sync": "^2.18.13",
+    "jspm": "^0.16.53",
+    "systemjs-builder": "^0.16.11"
   }
 }
