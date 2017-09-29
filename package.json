@@ -17,9 +17,6 @@
     "url": "https://github.com/milenstanev/jspm.util/issues"
   },
   "homepage": "https://github.com/milenstanev/jspm.util#readme",
-  "jspm": {
-    "dependencies": {}
-  },
   "dependencies": {
     "browser-sync": "^2.18.13",
     "jspm": "^0.16.53",

@@ -2,7 +2,6 @@
 const fs = require('fs');
 const Builder = require('systemjs-builder');
 const pjson = require('../package.json');
-const process = require('process');
 
 let builderConfigMeta = {};
 
@@ -20,7 +19,7 @@ for(let key in pjson.jspm.dependencies) {
  * .. -> debug, run as node file
  * @type {string}
  */
-const baseUrl = process.argv[3] || '.';
+const baseUrl = '.';
 /**
  * Configure builder paths
  */
@@ -41,7 +40,7 @@ builder.config({
 
 builder
   .buildStatic(
-    `${baseUrl}/src/${pjson.main}.js`,
+    `${baseUrl}/src/index.js`,
     `${baseUrl}/${pjson.main}.js`,
     {
       inject: true,
